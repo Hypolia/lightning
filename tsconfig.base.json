@@ -17,8 +17,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@lightning/shared/api-request": ["libs/shared/api-request/src/index.ts"],
-      "@lightning/shared/auth": ["libs/shared/auth/src/index.ts"]
+      "@lightning/shared/api-request": ["libs/shared/api-request/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
