@@ -20,7 +20,8 @@
       "@lightning/board/filter/logic": ["libs/board/filter/logic/src/index.ts"],
       "@lightning/board/filter/types": ["libs/board/filter/types/src/index.ts"],
       "@lightning/shared/api-request": ["libs/shared/api-request/src/index.ts"],
-      "@lightning/shared/auth": ["libs/shared/auth/src/index.ts"]
+      "@lightning/shared/auth": ["libs/shared/auth/src/index.ts"],
+      "@lightning/shared/utils": ["libs/shared/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
