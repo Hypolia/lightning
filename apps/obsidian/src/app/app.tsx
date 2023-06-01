@@ -3,6 +3,7 @@ import Home from "./pages";
 import {useState} from "react";
 import NavigationContext, {NavigationContract} from "./contexts/navigation-context";
 import {HomeIcon} from "@heroicons/react/24/outline";
+import LoginPage from "./pages/login";
 
 export function App() {
   const [navigation, setNavigation] = useState<NavigationContract[]>([
@@ -10,7 +11,8 @@ export function App() {
   ])
 
   const routes = [
-    { uid: "home", href: "/", component: <Home />}
+    { uid: "home", href: "/", component: <Home />},
+    { uid: "login", href: "/login", component: <LoginPage /> }
   ]
   return (
     <div>

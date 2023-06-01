@@ -7,12 +7,12 @@ export default defineConfig({
   cacheDir: '../../node_modules/.vite/obsidian',
 
   server: {
-    port: 4200,
+    port: 3000,
     host: 'localhost',
   },
 
   preview: {
-    port: 4300,
+    port: 3001,
     host: 'localhost',
   },
 
