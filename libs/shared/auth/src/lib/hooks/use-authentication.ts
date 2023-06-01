@@ -1,7 +1,7 @@
 import { ApiRequestBuilder } from '@lightning/shared/api-request'
 import { useContext } from 'react'
 import { useCookies } from 'react-cookie'
-import { AuthenticationContext } from '@lightning/shared/auth'
+import { AuthenticationContext } from '../contexts/authentication-context'
 
 export function useAuthentication () {
     const [authentication, setAuthentication] = useContext(AuthenticationContext)
@@ -16,7 +16,7 @@ export function useAuthentication () {
         setAuthentication({ ...authentication, user: data })
     }
 
-    async function handleLogin (fields: { [key: string]: never }): Promise<void> {
+    async function handleLogin (fields: { [key: string]: string }): Promise<void> {
         const { data } = await new ApiRequestBuilder()
             .post('/authentication/login')
             .formData(fields)
