@@ -5,6 +5,9 @@ import NavigationContext, {NavigationContract} from "./contexts/navigation-conte
 import {HomeIcon} from "@heroicons/react/24/outline";
 import LoginPage from "./pages/login";
 import {AuthenticationContext} from "@lightning/shared/auth";
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+const queryClient = new QueryClient()
 
 export function App() {
   const [navigation, setNavigation] = useState<NavigationContract[]>([
@@ -17,7 +20,7 @@ export function App() {
     { uid: "login", href: "/login", component: <LoginPage /> }
   ]
   return (
-    <div>
+    <QueryClientProvider client={queryClient}>
       <AuthenticationContext.Provider value={authentication as never}>
         <NavigationContext.Provider value={[navigation, setNavigation]}>
           <Routes>
@@ -34,7 +37,7 @@ export function App() {
         </NavigationContext.Provider>
       </AuthenticationContext.Provider>
 
-    </div>
+    </QueryClientProvider>
   );
 }
 
