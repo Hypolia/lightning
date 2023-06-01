@@ -1,7 +1,9 @@
 import {useEffect, useState} from "react";
-import {useAuthentication} from "../hooks/use-authentication";
+import {useAuthentication} from '../hooks/use-authentication'
+import { useNavigate } from 'react-router-dom'
 
 export function Login () {
+  const navigate = useNavigate()
   const { handleLogin } = useAuthentication()
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
@@ -19,19 +21,14 @@ export function Login () {
     console.log(form);
     
     await handleLogin(form)
+    navigate("/")
+
+
   }
 
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
-      <div className="flex min-h-full flex-1">
+      <div className="flex flex-1 min-h-screen overflow-hidden">
         <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
