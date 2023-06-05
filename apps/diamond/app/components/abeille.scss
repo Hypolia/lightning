@@ -1,0 +1,77 @@
+@keyframes slidein {
+    0% {
+        left: -5%;
+    }
+    5% {
+        transform: translateY(10px);
+    }
+    10% {
+        transform: translateY(0px);
+    }
+    15% {
+        transform: translateY(10px);
+    }
+    20% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: scale(1.2) translateY(20px) rotateX(40deg);
+    }
+    30% {
+        transform: translateY(40px);
+    }
+    35% {}
+    40% {}
+    45% {
+        transform: translateY(0px) rotateX(10deg) rotateX(35deg);
+    }
+    50% {}
+    55% {}
+    60% {
+        transform: translateY(12px) rotateX(0deg);
+    }
+    80% {
+        transform: translateY(40px) rotateX(45deg);
+    }
+    85% {}
+    90% {}
+    95% {}
+    100% {
+        left: 100%;
+        transform: scale(0.8) translateY(0px) rotateX(0deg);
+    }
+}
+
+@keyframes rotateInPlace {
+    20% {
+        transform: translate(100px, -10px) rotateX(20deg);
+    }
+    30% {
+        transform: translate(50px, 30px);
+    }
+    40% {
+        transform: translate(0px, 10px);
+    }
+    50% {
+        transform: translate(40px, 50px) rotate(10deg);
+    }
+    80% {
+        transform: translate(30px, -20px);
+    }
+}
+
+.abeille1 {
+    animation: 20s ease-in 1s infinite both running slidein;
+}
+
+.abeille2 {
+    animation: 20s alternate 1s backwards infinite rotateInPlace;
+}
+
+.abeille3 {
+    animation: 18s alternate 5s backwards infinite rotateInPlace;
+}
+
+.abeille4 {
+    animation: 15s alternate 3s backwards infinite rotateInPlace;
+}
