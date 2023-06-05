@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://www.leadcode.fr">
-    <img src="https://cdn.discordapp.com/attachments/935833137349541918/1101533435270545458/logo.png" width="318px" alt="Leadcode logo" />
+  <a href="https://www.hypolia.fr">
+    <img src="https://media.discordapp.net/attachments/936741758635769866/937762244014522458/logo_4005x2156.png?width=2644&height=1424" width="318px" alt="Hypolia logo" />
   </a>
 </p>
 <h3 align="center">Synergistic and powerful applications!</h3>
 <p align="center">Build your web applications quickly and easily ⚡</p>
 
 <p align="center">
-  <a href="https://github.com/Leadcode-solutions/lightning/blob/master/LICENSE">
+  <a href="https://github.com/hypolia/lightning/blob/master/LICENSE">
     <img alt="GNUv3 License" src="https://img.shields.io/badge/License-GNU%20v3-yellow.svg">
   </a>
 
