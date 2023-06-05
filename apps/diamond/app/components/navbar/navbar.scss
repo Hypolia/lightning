@@ -1,0 +1,104 @@
+.navbar {
+    width: 90%;
+    margin: 0 5%;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    z-index: 50;
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+    }
+    &::before {
+        background-image: url("../../../public/images/navbar/wood--left.webp");
+        background-size: 134px 73px;
+        background-position: top;
+        background-repeat: repeat-x;
+        left: -3px;
+        width: 134px;
+        height: 73px;
+        z-index: 0;
+    }
+    &::after {
+        background-image: url("../../../public/images/navbar/wood--right.webp");
+        background-size: 134px 73px;
+        background-position: top;
+        background-repeat: repeat-x;
+        right: 0;
+        width: 134px;
+        height: 73px;
+        z-index: 0;
+    }
+    .navbar-container {
+        height: 73px;
+        padding-top: 8px;
+        padding-bottom: 13px;
+        background-image: url("../../../public/images/navbar/wood--middle.webp");
+        background-size: 1503px 73px;
+        background-position: top;
+        background-repeat: repeat-x;
+        z-index: 11;
+        ul {
+            z-index: 20;
+        }
+        .logo img {
+            margin: -65px 15px -40px 20px;
+            width: 320px;
+            height: auto;
+        }
+        .icon img {
+            margin: -40px 5px -40px 10px;
+        }
+        .menu-item-0 {
+            border-right-width: 6px;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            padding-right: 10px;
+            flex-shrink: 0;
+        }
+        .menu-item {
+            text-align: center;
+            border: solid;
+            border-width: 0 6px 0 0;
+            -webkit-border-image: url("../../../public/images/navbar/divider.png") 6 repeat;
+            position: relative;
+            -webkit-transition: width .2s ease-in;
+            transition: width .2s ease-in;
+            letter-spacing: 1px;
+        }
+        .links {
+            font-family: Belwe Bold, Georgia, Times, Times New Roman, serif;
+            color: rgb(177, 150, 125);
+            text-transform: uppercase;
+        }
+        .links li:hover {
+            transition: all .2s ease-in;
+            cursor: pointer;
+            color: rgb(223, 202, 183);
+        }
+        .link-active {
+            color: rgb(223, 202, 183);
+        }
+    }
+    .branch {
+        position: absolute;
+        top: -85px;
+        transform: rotate(-110deg);
+        width: 200px;
+        z-index: -1;
+    }
+    .branch2 {
+        position: absolute;
+        top: -100px;
+        right: 0;
+        transform: rotate(-110deg) rotateX(180deg);
+        width: 200px;
+        z-index: -1;
+    }
+}
