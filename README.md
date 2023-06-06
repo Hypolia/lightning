@@ -19,7 +19,7 @@
     <img src="https://miro.medium.com/v2/resize:fit:1400/1*RjjHWXEUgGHcwgtuXmv4zw.png"  alt="Banner" />
 </p>
 
-**Leadcode Lightning** is an open-source project that makes developing web applications quick and easy. Lightning is written in [Typescript](https://www.typescriptlang.org/) and uses [NX](https://nx.dev/) to manage our different applications and libraries.
+**Hypolia Lightning** is an open-source project that makes developing web applications quick and easy. Lightning is written in [Typescript](https://www.typescriptlang.org/) and uses [NX](https://nx.dev/) to manage our different applications and libraries.
 
 ## Getting Started
 
@@ -59,3 +59,12 @@ Our project is divided into several libraries, we are going to have 3 major cate
 We have separated the logical components “feature” and the UI components “UI” for each of the libraries. Requests and data are always called in features and flow to UI components. The goal is really to separate our features as much as possible to avoid circular dependencies and facilitate understanding of the project.
 
 It’s an NX-proven approach, feel free to read the book “effective react with NX”, very interesting and well detailed.
+
+---
+## Diamond
+Diamond is a NextJS application that allows customers to browse and read our articles, view their account and global or personal statistics. Go to our shop and many other actions
+
+
+Here's a video presenting the Alpha version of the customer site UI!
+
+[![Watch the video](https://cdn.discordapp.com/attachments/936741758635769866/948191889138524190/Render_1_Jour.png)](https://cdn.discordapp.com/attachments/936741758635769866/1115565982346379354/enregistrement-de-lecran-2023-06-06-a-105616_2dg798mX.mp4)
