@@ -1,1 +1,1 @@
-export * from './lib/shared-enums';
+export * from './lib/icon.enum'
