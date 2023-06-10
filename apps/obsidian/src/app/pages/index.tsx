@@ -2,7 +2,8 @@ import Search from "../components/search";
 import Dashboard from "../layouts/default";
 import { Breadcrumbs, BreadcrumbsPage } from '@lightning/shared/breadcrumbs'
 import { Ressource } from "../components/ressource";
-
+import { IconEnum } from '@lightning/shared/enums'
+import { Icon } from '@lightning/shared/ui'
 
 const pages: BreadcrumbsPage[] = [
   { name: "accueil", href: "/", current: true}
@@ -54,6 +55,9 @@ export default function Home () {
           </div>
         </div>
 
+        <div>
+          <Icon name={IconEnum.ENVIRONMENT} className="w-32"/>
+        </div>
         <div className="flex mt-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-4">
             { resources.map((resource) =>  <Ressource resource={resource}/> )}
