@@ -26,6 +26,7 @@ import LifecycleJobStrokeIcon from './icons/lifecycle-job-stroke-icon'
 import MongoDBIcon from './icons/mongodb'
 import PostgresqlIcon from './icons/postgresql'
 import RedisIcon from './icons/redis'
+import IconFa from './icon-fa/icon-fa'
 
 
 
@@ -38,7 +39,7 @@ export interface IconProps {
   pathColor?: string
 }
 
-export function Icon (props: IconProps) {
+export function Icon (props: IconProps): JSX.Element {
   const formattedProps = { ...props }
 
   formattedProps.width = formattedProps.width || '1.5rem'
@@ -101,6 +102,6 @@ export function Icon (props: IconProps) {
     case IconEnum.LIFECYCLE_JOB_STROKE:
       return <LifecycleJobStrokeIcon {...formattedProps} />
     default:
-      <span>No icon found</span>
+      return <IconFa {...formattedProps} />
   }
 }
