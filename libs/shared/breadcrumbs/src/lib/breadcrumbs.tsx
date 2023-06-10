@@ -12,11 +12,11 @@ export function Breadcrumbs ({ pages }: Props) {
   return (
     <>
       <nav className="flex" aria-label="Breadcrumb">
-        <ol>
+        <ol className="flex items-center space-x-2">
           <li>
             <div>
               <Link to={"/"} className="text-gray-400 hover:text-gray-500">
-                <HomeIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
+                <HomeIcon className="h-4 w-4 flex-shrink-0" aria-hidden="true" />
                 <span className="sr-only">Home</span>
               </Link>
             </div>

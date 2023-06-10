@@ -33,6 +33,7 @@
     "axios": "^1.4.0",
     "core-js": "^2.5.4",
     "document-register-element": "1.13.1",
+    "framer-motion": "^10.12.16",
     "next": "13.4.1",
     "normalize.css": "^8.0.1",
     "react": "18.2.0",
