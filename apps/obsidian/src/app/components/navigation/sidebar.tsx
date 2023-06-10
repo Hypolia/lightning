@@ -26,7 +26,7 @@ export default function Sidebar () {
                   >
                     <img
                       className="h-12 w-auto"
-                      src="https://cdn.discordapp.com/attachments/935833137349541918/1071833266841210961/branding.png"
+                      src="../../../../public/icon.webp"
                       alt="Your Company"
                     />
                   </div>

@@ -10,15 +10,15 @@ type Props = {
 
 export default function AuthenticationMiddleware ({ children }: Props) {
   const { getCurrentUser } = useAuthentication()
-  const { isLoading, isError } = useQuery<unknown, AxiosError>('isLoggedIn', getCurrentUser, { retry: false })
-
+  /*const { isLoading, isError } = useQuery<unknown, AxiosError>('isLoggedIn', getCurrentUser, { retry: false })
+  
   if (isLoading) {
     return <div>Loading...</div>
   }
 
   if (isError) {
     return <Navigate to={"/login"} replace={true} />
-  }
+  }*/
 
   return (
     <Fragment>{ children }</Fragment>
