@@ -46,6 +46,9 @@ export function Icon (props: IconProps): JSX.Element {
   formattedProps.viewBox = formattedProps.viewBox || '0 0 24 24'
   formattedProps.className = 'shrink-0 ' + (formattedProps.className || '')
 
+  console.log(formattedProps);
+  
+
   switch (props.name) {
     case IconEnum.GITHUB:
       return <GithubIcon {...formattedProps} />

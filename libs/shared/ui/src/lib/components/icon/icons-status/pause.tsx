@@ -2,7 +2,7 @@ import { IconProps } from '../icon'
 
 export default function PauseIcon(props: IconProps) {
   return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg">
+    <svg {...props} fill="none" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
       <path
         fill="#A0AFC5"
         d="M5.833 4.375c.483 0 .875.392.875.875v3.5a.875.875 0 11-1.75 0v-3.5c0-.483.391-.875.875-.875zM9.041 5.25a.875.875 0 10-1.75 0v3.5a.875.875 0 101.75 0v-3.5z"

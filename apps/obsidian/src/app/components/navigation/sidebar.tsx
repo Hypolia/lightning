@@ -22,10 +22,10 @@ export default function Sidebar () {
               <Link to={"/"} className="inline-flex border">
                 <div className="absolute inset-y-0 left-0 md:static md:flex-shrink-0">
                   <div
-                    className="flex h-20 w-20 items-center justify-center  focus:outline-none "
+                    className="flex h-16 w-16 items-center justify-center  focus:outline-none "
                   >
                     <img
-                      className="h-12 w-auto"
+                      className="h-10 w-auto"
                       src="../../../../public/icon.webp"
                       alt="Your Company"
                     />

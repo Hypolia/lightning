@@ -56,7 +56,7 @@ export default function Home () {
         </div>
 
         <div>
-          <Icon name={IconEnum.ENVIRONMENT} className="w-32"/>
+          <Icon name={"TEST"} className="w-32"/>
         </div>
         <div className="flex mt-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-4">

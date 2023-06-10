@@ -5,7 +5,10 @@ export default function ProgressIcon(props: IconProps) {
   delete newProps.pathColor
 
   return (
-    <svg {...newProps} xmlns="http://www.w3.org/2000/svg">
+    <svg 
+      {...props} fill="none" viewBox="0 0 14 14"
+      xmlns="http://www.w3.org/2000/svg"  
+    >
       <path
         fill={`${props.pathColor ? props.pathColor : '#FF7C00'}`}
         fillRule="evenodd"

@@ -1,12 +1,10 @@
 import { IconProps } from '../icon'
 
 export default function SuccessIcon(props: IconProps) {
+  
   return (
     <svg
-      name={props.name}
-      width={props.width}
-      viewBox={props.viewBox}
-      className={props.className}
+      {...props} fill="none" viewBox="0 0 14 14"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
