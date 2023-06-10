@@ -1,5 +1,5 @@
-import { Icon } from '@lightning/shared/ui'
-import { IconEnum } from '@lightning/shared/enums'
+import {Button, Icon} from '@lightning/shared/ui'
+import {IconEnum} from '@lightning/shared/enums'
 import Dashboard from '../../layouts/default'
 
 export default function HomeEnvironments () {
@@ -15,21 +15,30 @@ export default function HomeEnvironments () {
             <h1 className='font-bold text-text-700 text-3xl max-w-3xl truncate'>Hypolia</h1>
           </div>
 
-          <div className="flex px-8">
-            <button>
-              <div className='flex h-14 items-center gap-2 p-3 border-b-2 border-indigo-500'>
-                <div>
-                  <Icon name={IconEnum.SUCCESS} className="w-4" />
+          <div className="flex px-8 justify-between items-center h-full">
+            <div>
+              <button>
+                <div className='flex h-14 items-center gap-4 p-3 border-b-2 border-indigo-500'>
+                  <div>
+                    <Icon name={IconEnum.SUCCESS} className="w-3" />
+                  </div>
+                  <div>
+                    <span className='font-medium text-sm text-indigo-500'>Environments</span>
+                  </div>
                 </div>
-                <div>
-                  <span className='font-medium text-indigo-500'>Environments</span>
-                </div>
-              </div>
-            </button>
-            
+              </button>
+            </div>
+
+            <div className='border-l h-14 flex items-center pl-6'>
+              <Button>
+                <span>New environment</span>
+              </Button>
+            </div>
+
+
           </div>
         </div>
-				
+
 			</div>
 		</Dashboard>
 	)
